@@ -191,7 +191,14 @@ def main():
     current_room = rooms[current_room_no]
 
     clock = pygame.time.Clock()
-
+    # --------------------------------------------------------------
+    f = pygame.font.SysFont('Bevan', 70);
+    t = f.render('GTA', True, (255, 255, 255));
+    screen.fill(GREEN)
+    screen.blit(t, (170, 120));
+    pygame.display.update();
+    pygame.time.wait(1100);
+    #-------------------------------------------------------------------
     done = False
 
     while not done:
