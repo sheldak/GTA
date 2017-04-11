@@ -39,7 +39,7 @@ class Wall(pygame.sprite.Sprite):
         super().__init__()
         self.image = pygame.image.load(pic )
         self.name = name
-        # Make our top-left corner the passed-in location.
+        
         self.rect = self.image.get_rect()
         self.rect.y = y
         self.rect.x = x
@@ -122,7 +122,6 @@ class Room1(Room):
     def __init__(self):
         super().__init__()
 
-        # lista obiektow w pokoju (nazwa wsporzedne x i y i obrazek do podstawienia) - DO ZMIANY
         walls = [["a",50, 0, flower],
                  ["b",150, 250, flower],
                  ["c",250, 480, flower]
@@ -142,7 +141,6 @@ class Room2(Room):
     def __init__(self):
         super().__init__()
 
-        # DO ZMIANY:
         walls = [["d",0, 0, flower],
                  ["e",0, 350, flower],
                  ["f",780, 0, flower],
